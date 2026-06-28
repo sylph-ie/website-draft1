@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Didot, "Bodoni MT", Cinzel, serif;
+  font-size: 25px;
+}
+
+body {
+  color: #7a9b33;  
+  font-family: Arial, sans-serif;
+  background-color:#0b2b0e;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+main {
+    padding: 0 70px;
+}
+
+article {
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+/* article:last-child {
+    margin-bottom: 0;
+}
+
+article:first-of-type {
+    margin-top: 50px;
+}*/
+
+#header-img {
+    width: 100px;
+    height: 100px;
+}
+
+
+/* header {
+    background-size: cover;
+    background-image: url("assets/images/vibrant-botanical-beautiful-seamless-pattern-elegant-black-background-colorful-line-art-plants-leaves-abstract-floral-424205582.png") 
+
+}*/
+
+#big-line {
+    border: none;
+    height: 2px;
+    background-color: #d5bb85;
+    margin-bottom: 20px;
+}
+
+#med-line {
+    border: none;
+    height: 2px;
+    background-color: #a5496b;
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#small-line {
+    border: none;
+    height: 1px;
+    background-color:#a5496b;
+    width: 25%;
+    margin:auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #e5e4e8;
+}
+
+input {
+    background-color: #e5e7ba;
+    border: 2px solid #4e593f;
+    border-radius: 6px;
+    outline: none;
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+
+label {
+    display: inline-block;
+    padding: 20px;
+    padding-right: 2px;
+    
+}
+
+textarea {
+    border: 2px solid #4e593f;
+    border-radius: 6px;
+    outline: none;
+    background-color: #e5e7ba;
+
+}
+
+.combo-headings {
+    color: #c0cf81;
+}
+
+
+.food-label {
+    color: #c0cf81;
+
+}
+
+.container {
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+
+img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+.about {
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.link-button {
+  background-color: #3a1b6b;
+  color: #f8daae;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  display:inline-block;
+}

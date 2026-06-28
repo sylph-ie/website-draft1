@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Miah's and Co.</title>
+        <link rel = "stylesheet" href = "style.css">
+
+    </head>
+
+    <body>
+        <header>
+            <figure>
+                <img id = "header-img" src = "assets/images/Placeholder-Logo-with-Creative-Concept-Graphics-11488238-1.jpg" alt = "Miah's and Co. Logo">
+            </figure>
+            <h1>Miah's and Co.</h1>
+            <nav>
+                <ul>
+                    <li><a href = "#menu">Menu</a></li>
+                    <li><a href = "#order-form">Order Form</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class = page-section id = "menu">
+                <h2 class = "food-label">Menu</h2>
+                <article class = "menu-item" id = "peri">
+                    <figure>
+                        <img src = "assets/images/Peri.png" alt = "Grilled chicken served with side dish, chips">
+                    </figure>
+                    <h3 class = "food-label">Peri Chicken</h3>
+                    <p>Try our grilled tender chicken marinated in our special blend of herbs! A certified fan-favourite for many of our regulars! Like all our main dishes, it can be served on its own (solo meal) or as a combo (with a side dish and soft drink/water).</br></br>
+                        <b class = "food-label">Prices:</b></br> <i>Solo meal: $6.00 | Combo meal (+ side dish and soft drink/water): $9.00 </i>
+                    </p>
+
+                </article>
+
+                <hr id = "med-line">
+
+                <article class = "menu-item" id = "tandoori">
+                    <figure>
+                        <img src = "assets/images/tandoori chicken - Copy.png" alt = "Roasted, red chicken served in a sizzle plate with onions">
+                    </figure>
+                    <h3 class = "food-label">Tandoori Chicken</h3>
+                    <p>For a more savoury alternative to the Peri Chicken, try our roasted Tandoori Chicken marinated in a yogurt and spice mixture, cooked inside our in-house tandoor-like oven! Comes with mint sauce on the side and its sizzle plate served with caramalised onions. It's sizzling plate is a must-have for a crowd-pleasing dish to add to your table! <i>(We personally recommend ordering it with garlic-mayo sauce (plot twist: there's no mayo in it!) and a side dish of rice...).</i></br></br>
+                        <b class = "food-label">Prices:</b></br> <i>Solo meal: $6.00 | Combo meal (+ side dish and soft drink/water): $9.50 </i>
+                    </p>
+
+                </article>
+
+                <hr id = "med-line">
+
+                <article class = "menu-item" id = "lamb">
+                    <figure>
+                        <img src = "assets/images/Lamb - Copy.png" alt = "Grilled lamb served on a sizzling plate with onions">
+                    </figure>
+                    <h3 class = "food-label">Grilled Lamb</h3>
+                    <p>For all lamb-lovers out there, try out our smokey and tender, grilled lamb! Served in a sizzling hot plate with caramelised onions. Want a tester? Get 500 g of this! A full-course? 1 kg!</br></br>
+                        <b class = "food-label">Prices:</b></br> <i>500 g: Solo meal: $12.00 | Combo meal (+ side dish and soft drink/water): $15.00</br> 1 kg: Solo meal: $21.00 | Combo meal (+ side dish and soft drink/water): $25.00 </i>
+                    </p>
+                    </br></br>
+                </article>
+            </section>
+
+            <hr id = "big-line">
+            </br>
+
+            <section class = page-section id = "order-form">
+                <h2 class = "food-label">Place Your Order:</h2>
+                </br>
+                <form> <!--1 form, 3 menu items, 5 labels each -->
+<!------------------------------ PERI CHICKEN------------------------------------->
+                    <h2><u class = "food-label">Peri Chicken:</u></h2>
+                    </br>
+                    <h3>How many solo or combo meals of this dish would you like?</h3>
+                    <p><i>Note: every combo meal includes a side dish and a soft drink/water.</i></p>
+                    </br>
+                    <label for = "peri-form_solo">Solo:</label>
+                    <input id = "peri-form_solo" type = "number" min = "0" name = "solo-combo" placeholder = "0">
+                    <label for = "peri-form_combo">  Combo:</label>
+                    <input id = "peri-form_combo" type = "number" min = "0" name = "solo-combo" placeholder = "0">
+
+                    <hr id = "small-line">
+                    
+                    <details>
+                        <summary><h3 class = "combo-headings">(For combo meals only - Please click the arrow above this text for side dish and drink options)</h3></summary>
+                        </br></br>
+                        <h3 class = "combo-headings">What are your side dishes:</h3>
+                        <p><i class = "combo-headings">Note: We will contact you if the total number of side dishes/drinks you order exceeds or is less than the number of combo meals you order.</i></p>
+                        </br>
+                        <label for = "peri-form_sidedish1" class = "combo-headings">Chips:</label>
+                        <input id = "peri-form_sidedish1" type = "number" min = "0" name = "sidedish" placeholder = "0">
+                        <label for = "peri-form_sidedish2" class = "combo-headings">  Rice:</label>
+                        <input id = "peri-form_sidedish2" type = "number" min = "0" name = "sidedish" placeholder = "0">
+                        <label for = "peri-form_sidedish3" class = "combo-headings">  Wrap bread:</label>
+                        <input id = "peri-form_sidedish3" type = "number" min = "0" name = "sidedish" placeholder = "0">
+                        <label for = "peri-form_sidedish4" class = "combo-headings">  Pita bread:</label>
+                        <input id = "peri-form_sidedish4" type = "number" min = "0" name = "sidedish" placeholder = "0">
+                        <label for = "peri-form_sidedish5" class = "combo-headings">  Salad:</label>
+                        <input id = "peri-form_sidedish5" type = "number" min = "0" name = "sidedish" placeholder = "0">
+                        </br></br></br></br>
+
+                        <h3 class = "combo-headings">What are your drinks:</h3>
+                        </br>
+                        <label for = "peri-form_drink1" class = "combo-headings">Mineral water:</label>
+                        <input id = "peri-form_drink1" type = "number" min = "0" name = "drink" placeholder = "0">
+                        <label for = "peri-form_drink2" class = "combo-headings">  Coke Original:</label>
+                        <input id = "peri-form_drink2" type = "number" min = "0" name = "drink" placeholder = "0">
+                        <label for = "peri-form_drink3" class = "combo-headings">  Coke Zero:</label>
+                        <input id = "peri-form_drink3" type = "number" min = "0" name = "drink" placeholder = "0">
+                        <label for = "peri-form_drink4" class = "combo-headings">  Sprite:</label>
+                        <input id = "peri-form_drink4" type = "number" min = "0" name = "drink" placeholder = "0">
+                        <label for = "peri-form_drink5" class = "combo-headings">  Minute Maid:</label>
+                        <input id = "peri-form_drink5" type = "number" min = "0" name = "drink" placeholder = "0">
+                        <label for = "peri-form_drink6" class = "combo-headings">  Ice Lemon Tea:</label>
+                        <input id = "peri-form_drink6" type = "number" min = "0" name = "drink" placeholder = "0"></br></br>
+                        <label for = "peri-form_drink7" class = "combo-headings">  Fanta Strawberry:</label>
+                        <input id = "peri-form_drink7" type = "number" min = "0" name = "drink" placeholder = "0">
+                    </details>
+                    </br></br></br>
+
+                    <hr id = "med-line">
+                    </br>
+
+<!------------------------------ TANDOORI CHICKEN------------------------------------->
+                    <h2><u class = "food-label">Tandoori Chicken:</u></h2>
+                    </br>
+                    <h3>How many solo or combo meals of this dish would you like?</h3>
+                    <p><i>Note: every combo meal includes a side dish and a soft drink/water.</i></p>
+                    </br>
+                    <label for = "tandoori-form_solo">Solo:</label>
+                    <input id = "tandoori-form_solo" type = "number" min = "0" name = "solo-combo" placeholder = "0">
+                    <label for = "tandoori-form_combo">  Combo:</label>
+                    <input id = "tandoori-form_combo" type = "number" min = "0" name = "solo-combo" placeholder = "0">
+
+                    <hr id = "small-line">
+
+                    <details>
+                        <summary><h3 class = "combo-headings">(For combo meals only - Please click the arrow above this text for side dish and drink options)</h3></summary>
+                        </br></br>
+                        <h3 class = "combo-headings">What are your side dishes:</h3>
+                        <p><i class = "combo-headings">Note: We will contact you if the total number of side dishes/drinks you order exceeds or is less than the number of combo meals you order.</i></p>
+                        </br>
+                        <label for = "tandoori-form_sidedish1" class = "combo-headings">  Chips:</label>
+                        <input id = "tandoori-form_sidedish1" type = "number" min = "0" name = "sidedish" placeholder = "0">
+                        <label for = "tandoori-form_sidedish2" class = "combo-headings">  Rice:</label>
+                        <input id = "tandoori-form_sidedish2" type = "number" min = "0" name = "sidedish" placeholder = "0">
+                        <label for = "tandoori-form_sidedish3" class = "combo-headings">  Wrap bread:</label>
+                        <input id = "tandoori-form_sidedish3" type = "number" min = "0" name = "sidedish" placeholder = "0">
+                        <label for = "tandoori-form_sidedish4" class = "combo-headings">  Pita bread:</label>
+                        <input id = "tandoori-form_sidedish4" type = "number" min = "0" name = "sidedish" placeholder = "0">
+                        <label for = "tandoori-form_sidedish5" class = "combo-headings">  Salad:</label>
+                        <input id = "tandoori-form_sidedish5" type = "number" min = "0" name = "sidedish" placeholder = "0">
+                        </br></br></br></br>
+
+                        <h3 class = "combo-headings">What are your drinks:</h3>
+                        </br>
+                        <label for = "tandoori-form_drink1" class = "combo-headings">Mineral water:</label>
+                        <input id = "tandoori-form_drink1" type = "number" min = "0" name = "drink" placeholder = "0">
+                        <label for = "tandoori-form_drink2" class = "combo-headings">  Coke Original:</label>
+                        <input id = "tandoori-form_drink2" type = "number" min = "0" name = "drink" placeholder = "0">
+                        <label for = "tandoori-form_drink3" class = "combo-headings">  Coke Zero:</label>
+                        <input id = "tandoori-form_drink3" type = "number" min = "0" name = "drink" placeholder = "0">
+                        <label for = "tandoori-form_drink4" class = "combo-headings">  Sprite:</label>
+                        <input id = "tandoori-form_drink4" type = "number" min = "0" name = "drink" placeholder = "0">
+                        <label for = "tandoori-form_drink5" class = "combo-headings">  Minute Maid:</label>
+                        <input id = "tandoori-form_drink5" type = "number" min = "0" name = "drink" placeholder = "0">
+                        <label for = "tandoori-form_drink6" class = "combo-headings">  Ice Lemon Tea:</label>
+                        <input id = "tandoori-form_drink6" type = "number" min = "0" name = "drink" placeholder = "0"></br></br>
+                        <label for = "tandoori-form_drink7" class = "combo-headings">  Fanta Strawberry:</label>
+                        <input id = "tandoori-form_drink7" type = "number" min = "0" name = "drink" placeholder = "0">
+                    </details>
+                    </br></br></br>
+
+                    <hr id = "med-line">
+                    </br>
+<!------------------------------ GRILLED LAMB ------------------------------------->
+                    <h2><u class = "food-label">Grilled Lamb:</u></h2>
+                    </br>
+                    <h3>How many solo or combo meals of this dish would you like?</h3>
+                    <p><i>Note: every combo meal includes a side dish and a soft drink/water.</i></p>
+                    </br>
+                    <label for = "lamb-form_solo">Solo:</label>
+                    <input id = "lamb-form_solo" type = "number" min = "0" name = "solo-combo" placeholder = "0">
+                    <label for = "lamb-form_combo">  Combo:</label>
+                    <input id = "lamb-form_combo" type = "number" min = "0" name = "solo-combo" placeholder = "0">
+
+                    <hr id = "small-line">
+                    </br></br>
+
+                    <details>
+                        <summary><h3 class = "combo-headings">(For combo meals only - Please click the arrow above this text for side dish and drink options)</h3></summary>
+                        </br></br>
+                        <h3 class = "combo-headings">What are your side dishes:</h3>
+                        <p><i class = "combo-headings">Note: We will contact you if the total number of side dishes/drinks you order exceeds or is less than the number of combo meals you order.</i></p>
+                        </br>
+                        <label for = "lamb-form_sidedish1" class = "combo-headings">Chips:</label>
+                        <input id = "lamb-form_sidedish1" type = "number" min = "0" name = "sidedish" placeholder = "0">
+                        <label for = "lamb-form_sidedish2" class = "combo-headings">  Rice:</label>
+                        <input id = "lamb-form_sidedish2" type = "number" min = "0" name = "sidedish" placeholder = "0">
+                        <label for = "lamb-form_sidedish3" class = "combo-headings">  Wrap bread:</label>
+                        <input id = "lamb-form_sidedish3" type = "number" min = "0" name = "sidedish" placeholder = "0">
+                        <label for = "lamb-form_sidedish4" class = "combo-headings">  Pita bread:</label>
+                        <input id = "lamb-form_sidedish4" type = "number" min = "0" name = "sidedish" placeholder = "0">
+                        <label for = "lamb-form_sidedish5" class = "combo-headings">  Salad:</label>
+                        <input id = "lamb-form_sidedish5" type = "number" min = "0" name = "sidedish" placeholder = "0">
+                        </br></br></br></br>
+
+                        <h3 class = "combo-headings">What are your drinks:</h3>
+                        </br>
+                        <label for = "lamb-form_drink1" class = "combo-headings">Mineral water:</label>
+                        <input id = "lamb-form_drink1" type = "number" min = "0" name = "drink" placeholder = "0">
+                        <label for = "lamb-form_drink2" class = "combo-headings">  Coke Original:</label>
+                        <input id = "lamb-form_drink2" type = "number" min = "0" name = "drink" placeholder = "0">
+                        <label for = "lamb-form_drink3" class = "combo-headings">  Coke Zero:</label>
+                        <input id = "lamb-form_drink3" type = "number" min = "0" name = "drink" placeholder = "0">
+                        <label for = "lamb-form_drink4" class = "combo-headings">  Sprite:</label>
+                        <input id = "lamb-form_drink4" type = "number" min = "0" name = "drink" placeholder = "0">
+                        <label for = "lamb-form_drink5" class = "combo-headings">  Minute Maid:</label>
+                        <input id = "lamb-form_drink5" type = "number" min = "0" name = "drink" placeholder = "0">
+                        <label for = "lamb-form_drink6" class = "combo-headings">  Ice Lemon Tea:</label>
+                        <input id = "lamb-form_drink6" type = "number" min = "0" name = "drink" placeholder = "0"></br></br>
+                        <label for = "lamb-form_drink7" class = "combo-headings">  Fanta Strawberry:</label>
+                        <input id = "lamb-form_drink7" type = "number" min = "0" name = "drink" placeholder = "0">
+                    </details>
+
+                    </br></br></br>
+
+                    <hr id = "med-line">
+                    </br>
+<!------------------------------ Add-ons ------------------------------------->
+                    <h2 class = "food-label">Any add-on's?</h2>
+                    </br>
+                    <label for = "addons1">Peri sauce</label>
+                    <input id = "addons1" type = "checkbox" name = "addons" placeholder = "0">
+                    <label for = "addons2">Garlic sauce</label>
+                    <input id = "addons2" type = "checkbox" name = "addons" placeholder = "0">
+                    <label for = "addons3">Chicken crisp'in</label>
+                    <input id = "addons3" type = "checkbox" name = "addons" placeholder = "0">
+                    <label for = "addons4">Pickled chilli</label>
+                    <input id = "addons4" type = "checkbox" name = "addons" placeholder = "0">
+                    </br></br></br></br>
+                    <hr id = "med-line">
+                    </br>
+<!------------------------------ Special requests ------------------------------------->
+                    <h2 class = "food-label">Any special requests?</h2>
+                    </br>
+                    <label for = "special_requests"></label>
+                    <textarea id = "special_requests" cols = "100" rows= "5" placeholder = "Type them here!"></textarea>
+
+                    </br></br></br></br>
+                    <h2 class = "food-label">Finished with your order?</h2>
+                    </br>
+                    <label for = "sub"></label>
+                    <input class = "link-button" id = "sub" type = "submit" value = "Go To Checkout 🍀">
+                    </br>
+                </form>
+            </section>
+        </main>
+        <footer>
+            </br></br>
+            <p>Made with love by sylph_ie</p>
+        </footer>
+    </body>
+</html>
