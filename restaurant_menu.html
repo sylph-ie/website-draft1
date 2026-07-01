@@ -3,6 +3,7 @@
     <head>
         <title>Miah's and Co.</title>
         <link rel = "stylesheet" href = "style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     </head>
 
@@ -67,7 +68,7 @@
             <section class = page-section id = "order-form">
                 <h2 class = "food-label">Place Your Order:</h2>
                 </br>
-                <form> <!--1 form, 3 menu items, 5 labels each -->
+                <form class= "form-grid"> <!--1 form, 3 menu items, 5 labels each -->
 <!------------------------------ PERI CHICKEN------------------------------------->
                     <h2><u class = "food-label">Peri Chicken:</u></h2>
                     </br>
@@ -112,7 +113,7 @@
                         <label for = "peri-form_drink5" class = "combo-headings">  Minute Maid:</label>
                         <input id = "peri-form_drink5" type = "number" min = "0" name = "drink" placeholder = "0">
                         <label for = "peri-form_drink6" class = "combo-headings">  Ice Lemon Tea:</label>
-                        <input id = "peri-form_drink6" type = "number" min = "0" name = "drink" placeholder = "0"></br></br>
+                        <input id = "peri-form_drink6" type = "number" min = "0" name = "drink" placeholder = "0">
                         <label for = "peri-form_drink7" class = "combo-headings">  Fanta Strawberry:</label>
                         <input id = "peri-form_drink7" type = "number" min = "0" name = "drink" placeholder = "0">
                     </details>
@@ -165,7 +166,7 @@
                         <label for = "tandoori-form_drink5" class = "combo-headings">  Minute Maid:</label>
                         <input id = "tandoori-form_drink5" type = "number" min = "0" name = "drink" placeholder = "0">
                         <label for = "tandoori-form_drink6" class = "combo-headings">  Ice Lemon Tea:</label>
-                        <input id = "tandoori-form_drink6" type = "number" min = "0" name = "drink" placeholder = "0"></br></br>
+                        <input id = "tandoori-form_drink6" type = "number" min = "0" name = "drink" placeholder = "0">
                         <label for = "tandoori-form_drink7" class = "combo-headings">  Fanta Strawberry:</label>
                         <input id = "tandoori-form_drink7" type = "number" min = "0" name = "drink" placeholder = "0">
                     </details>
@@ -218,7 +219,7 @@
                         <label for = "lamb-form_drink5" class = "combo-headings">  Minute Maid:</label>
                         <input id = "lamb-form_drink5" type = "number" min = "0" name = "drink" placeholder = "0">
                         <label for = "lamb-form_drink6" class = "combo-headings">  Ice Lemon Tea:</label>
-                        <input id = "lamb-form_drink6" type = "number" min = "0" name = "drink" placeholder = "0"></br></br>
+                        <input id = "lamb-form_drink6" type = "number" min = "0" name = "drink" placeholder = "0">
                         <label for = "lamb-form_drink7" class = "combo-headings">  Fanta Strawberry:</label>
                         <input id = "lamb-form_drink7" type = "number" min = "0" name = "drink" placeholder = "0">
                     </details>
@@ -229,7 +230,6 @@
                     </br>
 <!------------------------------ Add-ons ------------------------------------->
                     <h2 class = "food-label">Any add-on's?</h2>
-                    </br>
                     <label for = "addons1">Peri sauce</label>
                     <input id = "addons1" type = "checkbox" name = "addons" placeholder = "0">
                     <label for = "addons2">Garlic sauce</label>
@@ -243,13 +243,11 @@
                     </br>
 <!------------------------------ Special requests ------------------------------------->
                     <h2 class = "food-label">Any special requests?</h2>
-                    </br>
                     <label for = "special_requests"></label>
                     <textarea id = "special_requests" cols = "100" rows= "5" placeholder = "Type them here!"></textarea>
 
                     </br></br></br></br>
-                    <h2 class = "food-label">Finished with your order?</h2>
-                    </br>
+                    <h2 class = "food-label align-text-finish" id = "sub">Finished with your order?</h2>
                     <label for = "sub"></label>
                     <input class = "link-button" id = "sub" type = "submit" value = "Go To Checkout 🍀">
                     </br>
